@@ -2,32 +2,32 @@ importScripts('/multimer/_nuxt/workbox.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/multimer/_nuxt/0c34b7fe081e84418905.js",
-    "revision": "abcf1224dd4ece0e4fbab9406a0aaa4f"
+    "url": "/multimer/_nuxt/07bf6f4898e8048665ab.js",
+    "revision": "403d98fa51c389cd92d391ba57951186"
   },
   {
     "url": "/multimer/_nuxt/1ea1a930f197d84b3a91.js",
     "revision": "267452a10c39e83778665e03f64f6e3e"
   },
   {
-    "url": "/multimer/_nuxt/230a9e3aeee8fc3bab0f.js",
-    "revision": "4f8857137d8991e80c1ef13036ea9f6c"
-  },
-  {
-    "url": "/multimer/_nuxt/2c9332902fdd1b54a178.worker.js",
-    "revision": "412503defa0bf2a150707e72b6295263"
-  },
-  {
     "url": "/multimer/_nuxt/6236b653a5ec275f8785.js",
     "revision": "7aadd0a2fa1c6dbfd8baade28aaeba6d"
   },
   {
-    "url": "/multimer/_nuxt/8b009d7f3a0f247d8e0f.js",
-    "revision": "a8de62485b97459f96a8628762425923"
+    "url": "/multimer/_nuxt/68f891ecdb0fc7a65bd8.worker.js",
+    "revision": "412503defa0bf2a150707e72b6295263"
+  },
+  {
+    "url": "/multimer/_nuxt/77c4458854e5ed63dacb.js",
+    "revision": "04ef7d6e313005cce9ebd3beddf9ea1e"
   },
   {
     "url": "/multimer/_nuxt/c127b8e34758395a9a58.js",
     "revision": "590b18ded6acb71e00521607de4a5ad4"
+  },
+  {
+    "url": "/multimer/_nuxt/cbfb69c150f9c9002a3c.js",
+    "revision": "c8e68320b42be1c47c2fe51f0d7be40c"
   }
 ], {
   "cacheId": "multimer",
@@ -37,6 +37,7 @@ workbox.precaching.precacheAndRoute([
 
 workbox.clientsClaim()
 workbox.skipWaiting()
+// This is manually copied into the sw.js file
 
 self.addEventListener('notificationclick', function (event) {
   event.notification.close()
